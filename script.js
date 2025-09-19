@@ -2,17 +2,11 @@ function calcularAhorro(dinero,porcentaje){
     return dinero * (porcentaje/100)
 }
 
-function suma(n1,n2){
-    return n1+n2
-}
+const suma = (n1,n2) => n1 + n2
 
-function resta(n1,n2){
-    return n1-n2
-}
+const resta = (n1,n2) => n1 - n2
 
-function multiplicacion(n1,n2){
-    return n1*n2
-}
+const multiplicacion = (n1,n2) => n1*n2  
 
 function division(n1,n2){
     if (n2!=0){
@@ -87,18 +81,21 @@ while (seguir){
                         break
                         ;
                     default:
-                        alert("Seleccione una opcion valida!")    
+                        alert("Seleccione una opcion valida! Vuelva a intentarlo")    
                     ;
                 }
                 break
-            case 3:
+            
+                case 3:
                 ultimoIngreso()
                 break
             ;
+
             case 4:
                 mostrarTodo()
                 break    
             ;
+
             default:
                 alert("Opcion incorrecta, vuelva a intentarlo")    
             ;
@@ -106,7 +103,3 @@ while (seguir){
         }
     }
 }
-
-
-
-
