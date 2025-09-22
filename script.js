@@ -1,3 +1,4 @@
+//Se cambia de usuario compu de empresa
 function calcularAhorro(dinero,porcentaje){
     return dinero * (porcentaje/100)
 }
