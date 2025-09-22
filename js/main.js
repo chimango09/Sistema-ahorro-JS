@@ -1,4 +1,3 @@
-//Se cambia de usuario compu de empresa
 function calcularAhorro(dinero,porcentaje){
     return dinero * (porcentaje/100)
 }
@@ -52,7 +51,7 @@ while (seguir){
                 if (guardar === "S"){
                     guardarIngreso()
                     alert("El resultado a sido guardado correctamente")
-                    
+
                 }
                 break
                 ;
@@ -78,7 +77,8 @@ while (seguir){
                         ;
                     case 4:
                         let resultado_div = division(numero1,numero2)  
-                        alert("El resultado de la division es: "+ resultado_div)
+                        if (numero2 === 0) {alert("La operacion no puede realizarse")}else{
+                            alert("El resultado de la division es: "+ resultado_div)}
                         break
                         ;
                     default:
